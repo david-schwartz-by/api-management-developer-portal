@@ -60,9 +60,11 @@ export class ProductSubscriptions {
         }
 
         this.working(true);
+
         try {
             const pageNumber = this.page() - 1;
-            const itemsPage = await this.productService.getSubscriptionsForProduct(userId, `/products/${productName}`);
+            const scope = `/subscriptions/sid/resourceGroups/rgid/providers/Microsoft.ApiManagement/service/sid/products/${productName}`;
+            const itemsPage = await this.productService.getSubscriptionsForProduct(userId, scope);
 
             this.hasPrevPage(pageNumber > 0);
             this.hasNextPage(!!itemsPage.nextLink);

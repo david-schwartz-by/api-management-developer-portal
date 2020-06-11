@@ -75,7 +75,8 @@ export class ProductSubscribe {
                 return;
             }
 
-            const product = await this.productService.getProduct(`products/${productName}`);
+            const productId = `subscriptions/sid/resourceGroups/rgid/providers/Microsoft.ApiManagement/service/sid/products/${productName}`;
+            const product = await this.productService.getProduct(productId);
 
             if (!product) {
                 return;
