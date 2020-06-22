@@ -173,6 +173,7 @@ $search-button-width: 30px;
 .input-group {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
 
     .input {
         border: none;
