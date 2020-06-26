@@ -9,7 +9,6 @@ $body-bg: none;
 
 .table {
     width: 100%;
-    max-width: 100%;
     margin-bottom: $spacer;
     background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
@@ -49,6 +48,7 @@ $body-bg: none;
         > div {
             padding: .75rem;
             vertical-align: top;
+            min-width: 150px;
         }
     }
 

@@ -41,7 +41,7 @@
 
 .mt-auto {
     margin-top: auto;
-} 
+}
 
 .mb-auto {
     margin-bottom: auto;
@@ -66,4 +66,15 @@
 
 .text-monospace {
     font-family: monospace;
+}
+
+.scrollable-x {
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.scrollable-y {
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
