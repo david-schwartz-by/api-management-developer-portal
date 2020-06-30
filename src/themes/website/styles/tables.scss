@@ -10,7 +10,7 @@ $body-bg: none;
 .table {
     width: 100%;
     margin-bottom: $spacer;
-    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+    // background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
     td,
     th {
@@ -38,7 +38,6 @@ $body-bg: none;
 
 .table {
     margin: 20px 0;
-    overflow-x: auto;
 
     .table-row {
         display: flex;
