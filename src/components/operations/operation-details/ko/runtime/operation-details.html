@@ -45,7 +45,7 @@
                 <div role="columnheader" class="table-preset-head">Description</div>
 
                 <!-- ko foreach: { data: operation().parameters, as: 'parameter' } -->
-                <div role="cell" class="text-truncate monospace" data-bind="text: parameter.name"></div>
+                <div role="cell" class="text-truncate monospace" data-bind="text: parameter.name, attr: { title: parameter.name }"></div>
                 <div role="cell" class="text-truncate" data-bind="text: parameter.in"></div>
                 <div role="cell" class="text-truncate" data-bind="text: parameter.required"></div>
                 <div role="cell" class="text-truncate monospace" data-bind="text: parameter.type"></div>
@@ -64,9 +64,9 @@
                 <div role="columnheader" class="table-preset-head">Description</div>
 
                 <!-- ko foreach: { data: operation().request.headers, as: 'header' } -->
-                <div role="cell" class="text-truncate monospace" data-bind="text: header.name"></div>
+                <div role="cell" class="text-truncate monospace" data-bind="text: header.name, attr: { title: header.name }"></div>
                 <div role="cell" class="text-truncate" data-bind="text: header.required"></div>
-                <div role="cell" class="text-truncate monospace" data-bind="text: header.type"></div>
+                <div role="cell" class="text-truncate monospace" data-bind="text: header.type, attr: { title: header.type }"></div>
                 <div role="cell" class="text-truncate" data-bind="markdown: header.description"></div>
                 <!-- /ko -->
             </div>
@@ -152,7 +152,7 @@
 
         <!-- ko foreach: { data: definitions, as: 'definition' } -->
         <div role="cell" class="text-truncate">
-            <a data-bind="text: definition.name, attr: { href: $component.getDefinitionReferenceUrl(definition) }"></a>
+            <a data-bind="text: definition.name, attr: { title: definition.name, href: $component.getDefinitionReferenceUrl(definition) }"></a>
         </div>
         <div role="cell" data-bind="markdown: definition.description"></div>
         <!-- /ko -->

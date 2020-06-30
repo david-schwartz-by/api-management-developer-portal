@@ -395,40 +395,45 @@ operation-console {
 
 .table-preset {
     display: grid;
-    // border-top: 1px solid black;
-    // border-right: 1px solid black;
     max-width: 100%;
     overflow-x: auto;
+    margin: 20px 0;
 }
 
 .table-preset > div {
     padding: 8px 4px;
-    // border-left: 1px solid black;
-    // border-bottom: 1px solid black;
 }
 
 .table-preset-head {
     font-weight: bold;
     border: none;
     border-bottom: 1px solid #dee2e6;
+
+    a {
+        color: inherit;
+    }
 }
 
 .table-preset-params {
-    grid-template-columns: minmax(150px, 2fr) 100px 100px minmax(150px, 2fr) minmax(300px, 3fr);
+    grid-template-columns: minmax(150px, 350px) 100px 100px 200px minmax(350px, 1fr);
 }
 
 .table-preset-headers {
-    grid-template-columns: minmax(150px, 2fr) 100px minmax(150px, 2fr) minmax(300px, 3fr);
+    grid-template-columns: minmax(150px, 350px) 100px 200px minmax(350px, 1fr);
 }
 
 .table-preset-schema { 
-    grid-template-columns: minmax(150px, 2fr) 100px minmax(150px, 2fr) minmax(300px, 3fr);
+    grid-template-columns: minmax(150px, 350px) 100px 200px minmax(350px, 1fr);
 }
 
 .table-preset-definitions {
-    grid-template-columns: minmax(150px, 2fr) minmax(300px, 3fr);
+    grid-template-columns: minmax(150px, 350px) minmax(350px, 1fr);
 }
 
 .table-preset-enum {
-    grid-template-columns: minmax(150px, 2fr) minmax(300px, 3fr);
+    grid-template-columns: minmax(150px, 350px) minmax(350px, 1fr);
+}
+
+.table-preset-reports {
+    grid-template-columns: minmax(150px, 350px) 100px 100px 100px 100px 100px 100px 100px;
 }
